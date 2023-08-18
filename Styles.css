@@ -1,0 +1,64 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Teko&display=swap');
+ /* font-family: 'Josefin Sans', sans-serif;
+ font-family: 'Teko', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+    background-color: rgb(1,22,30) ;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 33px;
+    font-family: 'Teko', sans-serif;
+}
+
+img{
+    height: 20px;
+  
+}
+
+.world{
+    text-transform:capitalize;
+    padding: 5px;
+    color: rgb(239,246,224) ;
+}
+
+span{
+    margin-left: 5px;
+    color: rgb(89,131,146);
+    
+}
+
+nav{
+    
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    font-family: 'Teko', sans-serif;
+    color: rgb(239,246,224);
+    margin-top: 20px;
+    margin-right: 10px;
+
+}
+
+
+nav ul{
+    list-style: none;
+
+}
+
+li{
+    display: inline-block;
+}
+
+li:hover{
+    color: rgb(89,131,146) ;
+}
