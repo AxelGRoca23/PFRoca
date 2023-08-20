@@ -8,57 +8,61 @@
     box-sizing: border-box;
 }
 
-header{
-    height: 100px;
-    background-color: rgb(16,0,43) ;
+section{
+    background-color:rgb(16,0,43) ;
+
 }
 
-h1{
+.sec{
+    height: 60px;
     display: flex;
     justify-content: center;
-    font-size: 33px;
-    font-family: 'Teko', sans-serif;
+    padding: 10px;
+    font-size: 30px;
+    
+
+}
+
+img{height: 30px;}
+
+.item1{
+    padding: 3px;
+    color: rgb(60,9,108);
     
 }
 
-
-.world{
-    text-transform:capitalize;
-    padding: 5px;
-    color: rgb(123,44,191) ;
+.item1:hover{
+    color:whitesmoke;
 }
-
-
-span{
-    margin-left: 5px;
-    color: rgb(157,78,221);
+.item2{
+    padding: 3px;
+    color:rgb(90,24,154) ;
     
 }
 
+.item2:hover{
+    color: aliceblue;
+}
+.item3{
+    padding: 3px;
+    color:rgb(123,44,191) ;
+    
+}
 
+.item3:hover{
+    color: aliceblue;
+}
+.item4{
+    padding: 3px;
+    color:rgb(199,125,255) ;
+    
+}
+
+.item4:hover{
+    color:whitesmoke;
+}
 
 nav{
+    background-color:rgb(36,0,70) ;
     
-    display: flex;
-    justify-content: right;
-    font-size: 20px;
-    font-family: 'Teko', sans-serif;
-    color: rgb(239,246,224);
-    margin-top: 20px;
-    margin-right: 10px;
-
-}
-
-
-nav ul{
-    list-style: none;
-
-}
-
-li{
-    display: inline-block;
-}
-
-li:hover{
-    color: rgb(90,24,154) ;
 }
