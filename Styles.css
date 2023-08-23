@@ -162,10 +162,6 @@ footer {
   width: 100%;
 }
 
-.col-12 {
-  margin-bottom: 15px;
-}
-
 .redes {
   font-size: 25px;
   letter-spacing: 5px;
@@ -190,6 +186,85 @@ footer {
   box-shadow: 0 0 5px white;
 }
 /* styles footer finaliza */
+/* Styles Sellos inicia */
+.container-fluid-h2 {
+  height: 60px;
+  background-color: rgb(90, 24, 154);
+}
+
+.sellos {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: white;
+  text-shadow: 0 0 5px rgb(36, 0, 70);
+}
+
+main {
+  background-color: rgb(16, 0, 43);
+}
+article {
+  border: 3px solid black;
+}
+
+.lost {
+  background-image: url(./images/lost-found.jpg);
+  background-position: center;
+  background-size: cover;
+  color: rgb(123, 44, 191);
+  font-weight: bold;
+  text-shadow: 0 0 5px black;
+}
+
+.sound {
+  background-image: url(./images/sound-garden1.jpg);
+  background-position: center;
+  background-size: cover;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+}
+.anjuna {
+  background-image: url(./images/anjuna.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+.bedrock {
+  background-image: url(./images/bedrock.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+.sudbeat {
+  background-image: url(./images/sudbeat-1.jpg);
+  background-position: center;
+  background-size: cover;
+  color: black;
+  font-weight: bold;
+  text-shadow: 0 0 5px black;
+}
+.allday {
+  background-image: url(./images/all-day.png);
+  background-position: center;
+  background-size: cover;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+}
+
+.btn {
+  align-content: center;
+  background-color: rgb(123, 44, 191);
+  border: 2px solid rgb(36, 0, 70);
+  color: white;
+}
+
+.btn :hover {
+  color: rgb(16, 0, 43);
+}
+
+/* Styles Sellos Finaliza */
 
 /* inician las @media */
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
