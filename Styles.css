@@ -73,9 +73,10 @@ nav {
 h2 {
   display: flex;
   justify-content: center;
-  font-size: 25px;
+  font-size: 22px;
   color: white;
   text-shadow: 0 0 10px rgb(16, 0, 43);
+  margin-bottom: 1px;
 }
 
 .sets {
@@ -210,18 +211,18 @@ article {
 .lost {
   background-image: url(./images/lost-found.jpg);
   background-position: center;
+  color: white;
   background-size: cover;
-  color: rgb(123, 44, 191);
-  font-weight: bold;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 15px black;
 }
 
 .sound {
-  background-image: url(./images/sound-garden1.jpg);
+  background-image: url(./images/sound-garden.png);
   background-position: center;
+  color: white;
   background-size: cover;
-  font-weight: bold;
-  text-shadow: 0 0 5px white;
+
+  text-shadow: 0 0 15px black;
 }
 .anjuna {
   background-image: url(./images/anjuna.jpg);
@@ -243,7 +244,7 @@ article {
   background-size: cover;
   color: black;
   font-weight: bold;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px white;
 }
 .allday {
   background-image: url(./images/all-day.png);
@@ -254,7 +255,6 @@ article {
 }
 
 .btn {
-  align-content: center;
   background-color: rgb(123, 44, 191);
   border: 2px solid rgb(36, 0, 70);
   color: white;
