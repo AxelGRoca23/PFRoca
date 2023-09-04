@@ -196,7 +196,7 @@ footer {
 .sellos {
   display: flex;
   justify-content: center;
-  font-size: 13px;
+  font-size: 14px;
   color: white;
   text-shadow: 0 0 5px rgb(36, 0, 70);
 }
@@ -265,6 +265,39 @@ article {
 }
 
 /* Styles Sellos Finaliza */
+/* Styles DJS inicia */
+.djs{
+  text-align: center;
+  color: white;
+}
+
+.djs:hover{
+  color: rgb(157, 78, 221);
+}
+
+.card{
+  border: 1px solid rgb(16, 0, 43);
+  background-color:rgb(60, 9, 108);
+ text-align: center;
+}
+.card-img-top{
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  border: 1px solid rgb(16, 0, 43);
+ 
+}
+.card-body{
+  color: white;
+}
+/* Styles DJS Finaliza */
+/* Styles proximos-eventos inicia */
+
+.carousel-inner img{
+width: 100%;
+height: 100%;
+}
+/* Styles proximos-eventos Finaliza */
 
 /* inician las @media */
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
@@ -323,4 +356,13 @@ article {
   .sasha {
     margin-top: 40vh;
   }
+}
+
+@media only screen and (max-width:576px) {
+.card-img-top{
+  height: 220px;
+  
+
+}
+  
 }
