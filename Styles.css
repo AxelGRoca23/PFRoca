@@ -266,37 +266,54 @@ article {
 
 /* Styles Sellos Finaliza */
 /* Styles DJS inicia */
-.djs{
+.djs {
   text-align: center;
   color: white;
 }
 
-.djs:hover{
+.djs:hover {
   color: rgb(157, 78, 221);
 }
 
-.card{
+.card {
   border: 1px solid rgb(16, 0, 43);
-  background-color:rgb(60, 9, 108);
- text-align: center;
+  background-color: rgb(60, 9, 108);
+  text-align: center;
 }
-.card-img-top{
+.card-img-top {
   background-size: cover;
   background-position: center;
   height: 150px;
   border: 1px solid rgb(16, 0, 43);
- 
 }
-.card-body{
+.card-body {
   color: white;
 }
 /* Styles DJS Finaliza */
 /* Styles proximos-eventos inicia */
-
-.carousel-inner img{
-width: 100%;
-height: 100%;
+.eventos {
+  text-align: center;
+  color: white;
 }
+
+.table {
+  color: white;
+  background-color: rgb(157, 78, 221);
+
+}
+.carousel-eventos {
+  width: 100%;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.main-eventos{
+  background-color: rgb(157, 78, 221);
+}
+/* Styles proximos-eventos Finaliza */
+/* Styles informacion inicia */
+
 /* Styles proximos-eventos Finaliza */
 
 /* inician las @media */
@@ -358,11 +375,15 @@ height: 100%;
   }
 }
 
-@media only screen and (max-width:576px) {
-.card-img-top{
-  height: 220px;
-  
+@media only screen and (max-width: 576px) {
+  .card-img-top {
+    height: 220px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+.carousel-inner{
+  height: 80vh;
 
 }
-  
+
 }
