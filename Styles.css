@@ -1,17 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Teko&display=swap");
-/* font-family: 'Josefin Sans', sans-serif;
- font-family: 'Teko', sans-serif; */
-
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&family=Rubik:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* styles header inicia */
+
 header {
   width: 100%;
 }
-section {
+header section {
   background-color: rgb(16, 0, 43);
 }
 
@@ -35,6 +33,7 @@ img {
 .item1:hover {
   color: whitesmoke;
 }
+
 .item2 {
   padding: 3px;
   color: rgb(90, 24, 154);
@@ -43,6 +42,7 @@ img {
 .item2:hover {
   color: aliceblue;
 }
+
 .item3 {
   padding: 3px;
   color: rgb(123, 44, 191);
@@ -51,6 +51,7 @@ img {
 .item3:hover {
   color: aliceblue;
 }
+
 .item4 {
   padding: 3px;
   color: rgb(199, 125, 255);
@@ -69,8 +70,7 @@ nav {
   height: 60px;
   background-color: rgb(90, 24, 154);
 }
-
-h2 {
+.container-fluid-h2 h2 {
   display: flex;
   justify-content: center;
   font-size: 22px;
@@ -85,9 +85,7 @@ h2 {
   color: white;
   text-shadow: 0 0 10px rgb(16, 0, 43);
 }
-/* styles header finaliza */
 
-/* styles main inicia */
 .galeria {
   background-color: rgb(123, 44, 191);
   display: grid;
@@ -97,7 +95,7 @@ h2 {
 }
 
 .item {
-  border: 3px solid black;
+  border: 2px solid rgb(60, 9, 108);
   background-size: cover;
   background-position: center;
 }
@@ -105,55 +103,33 @@ h2 {
 .grid1 {
   background-image: url(images/Guy-J.jpg);
 }
+
 .grid2 {
   background-image: url(images/digweed.jpg);
 }
+
 .grid3 {
   background-image: url(images/hernan-cattaneo.jpg);
 }
+
 .grid4 {
   background-image: url(images/mariano-mellino.jpg);
 }
+
 .grid5 {
   background-image: url(images/nick-warren.jpg);
 }
+
 .grid6 {
   background-image: url(images/sasha.png);
 }
 
-.guyj {
-  display: flex;
-  justify-content: center;
-  margin-top: 22px;
-}
-.digweed {
+.guyj, .sasha, .warren, .mariano, .hc, .digweed {
   display: flex;
   justify-content: center;
   margin-top: 22px;
 }
 
-.hc {
-  display: flex;
-  justify-content: center;
-  margin-top: 22px;
-}
-.mariano {
-  display: flex;
-  justify-content: center;
-  margin-top: 22px;
-}
-.warren {
-  display: flex;
-  justify-content: center;
-  margin-top: 22px;
-}
-.sasha {
-  display: flex;
-  justify-content: center;
-  margin-top: 22px;
-}
-/* styles main finaliza */
-/* styles footer inicia*/
 footer {
   background-color: rgb(157, 78, 221);
   text-align: center;
@@ -161,18 +137,18 @@ footer {
   color: white;
   text-shadow: 0 0 5px rgb(36, 0, 70);
   width: 100%;
+  font-family: "Rubik", sans-serif;
 }
 
 .redes {
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 5px;
 }
 .redes a {
   text-decoration: none;
   color: white;
 }
-/* styles footer finaliza */
-/* styles boton inicia */
+
 .subir {
   height: 40px;
   width: 40px;
@@ -183,14 +159,8 @@ footer {
   right: 40px;
   text-align: center;
   line-height: 40px;
-  font: size 20px;
+  font-size: 20px;
   box-shadow: 0 0 5px white;
-}
-/* styles footer finaliza */
-/* Styles Sellos inicia */
-.container-fluid-h2 {
-  height: 60px;
-  background-color: rgb(90, 24, 154);
 }
 
 .sellos {
@@ -204,8 +174,8 @@ footer {
 main {
   background-color: rgb(16, 0, 43);
 }
-article {
-  border: 3px solid black;
+main article {
+  border: 2px solid rgb(60, 9, 108);
 }
 
 .lost {
@@ -221,9 +191,9 @@ article {
   background-position: center;
   color: white;
   background-size: cover;
-
   text-shadow: 0 0 15px black;
 }
+
 .anjuna {
   background-image: url(./images/anjuna.jpg);
   background-position: center;
@@ -231,6 +201,7 @@ article {
   color: white;
   text-shadow: 0 0 5px white;
 }
+
 .bedrock {
   background-image: url(./images/bedrock.jpg);
   background-position: center;
@@ -238,6 +209,7 @@ article {
   color: white;
   text-shadow: 0 0 5px white;
 }
+
 .sudbeat {
   background-image: url(./images/sudbeat-1.jpg);
   background-position: center;
@@ -246,6 +218,7 @@ article {
   font-weight: bold;
   text-shadow: 0 0 5px white;
 }
+
 .allday {
   background-image: url(./images/all-day.png);
   background-position: center;
@@ -259,13 +232,10 @@ article {
   border: 2px solid rgb(36, 0, 70);
   color: white;
 }
-
 .btn :hover {
-  color: rgb(16, 0, 43);
+  color: rgb(90, 24, 154);
 }
 
-/* Styles Sellos Finaliza */
-/* Styles DJS inicia */
 .djs {
   text-align: center;
   color: white;
@@ -280,110 +250,57 @@ article {
   background-color: rgb(60, 9, 108);
   text-align: center;
 }
-.card-img-top {
+.card .card-img-top {
   background-size: cover;
   background-position: center;
   height: 150px;
-  border: 1px solid rgb(16, 0, 43);
+  border: 1px solid rgb(90, 24, 154);
 }
+
 .card-body {
   color: white;
 }
-/* Styles DJS Finaliza */
-/* Styles proximos-eventos inicia */
+
+.body-eventos {
+  background-color: rgb(157, 78, 221);
+}
+
 .eventos {
   text-align: center;
   color: white;
 }
 
-.table {
-  color: white;
-  background-color: rgb(157, 78, 221);
-
-}
 .carousel-eventos {
   width: 100%;
 }
+
 .carousel-inner img {
   width: 100%;
   height: 100%;
 }
-.main-eventos{
+
+.table {
+  color: white;
   background-color: rgb(157, 78, 221);
 }
-/* Styles proximos-eventos Finaliza */
-/* Styles informacion inicia */
 
-/* Styles proximos-eventos Finaliza */
-
-/* inician las @media */
-@media only screen and (min-width: 576px) and (max-width: 1024px) {
-  .galeria {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 200px);
-    height: 600px;
-  }
-
-  .grid1 {
-    grid-column: 1/2;
-    grid-row: 1/4;
-  }
-  .grid2 {
-    grid-column: 2/3;
-    grid-row: 1/4;
-    background-image: url(images/digweed2.jpg);
-  }
-  .grid3 {
-    grid-column: 3/4;
-    grid-row: 1/4;
-  }
-  .grid4 {
-    grid-column: 4/5;
-    grid-row: 1/4;
-  }
-  .grid5 {
-    grid-column: 5/6;
-    grid-row: 1/4;
-  }
-  .grid6 {
-    grid-column: 6/7;
-    grid-row: 1/4;
-  }
-
-  .guyj {
-    margin-top: 40vh;
-  }
-
-  .digweed {
-    margin-top: 40vh;
-  }
-
-  .hc {
-    margin-top: 40vh;
-  }
-
-  .mariano {
-    margin-top: 40vh;
-  }
-
-  .warren {
-    margin-top: 40vh;
-  }
-
-  .sasha {
-    margin-top: 40vh;
-  }
+.contacto {
+  text-align: center;
+  color: white;
+  margin-top: 3px;
 }
 
-@media only screen and (max-width: 576px) {
-  .card-img-top {
-    height: 220px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-.carousel-inner{
-  height: 80vh;
-
+.form-contacto {
+  color: white;
+  background-color: rgb(123, 44, 191);
 }
 
+.nleft {
+  background-color: rgb(123, 44, 191);
 }
+
+.nright {
+  background-image: url(./images/all-day-carrousel.jpg);
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=Styles.css.map */

@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Rubik:wght@300&display=swap');
+// font-family: 'Rajdhani', sans-serif;
+// font-family: 'Rubik', sans-serif;
+$colors: "colores";
+$color1: rgb(16,0,43);
+$color2: rgb(36,0,70);
+$color3: rgb(60,9,108);
+$color4: rgb(90,24,154);
+$color5: rgb(123,44,191);
+$color6: rgb(157,78,221);
+$color7: rgb(199,125,255);
+$color8: rgb(224,170,255);
+
+$sizes: "tamaños";
+$size1: 20px;
+$size2: 40px;
+$size3: 60px;
+$size4: 80px;
+$size5: 100px;
+
+$fonts: "fuentes";
+$font1: 'Rajdhani', sans-serif;
+$font2: 'Rubik', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// Styles header inicia
+header {
+  width: 100%;
+  section {
+    background-color: $color1;
+  }
+}
+.sec {
+  height: $size3;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 30px;
+}
+img {
+  height: 30px;
+}
+.item1 {
+  padding: 3px;
+  color: $color3;
+}
+.item1:hover {
+  color: whitesmoke;
+}
+.item2 {
+  padding: 3px;
+  color: $color4;
+}
+.item2:hover {
+  color: aliceblue;
+}
+.item3 {
+  padding: 3px;
+  color: $color5;
+}
+.item3:hover {
+  color: aliceblue;
+}
+.item4 {
+  padding: 3px;
+  color: $color7;
+}
+.item4:hover {
+  color: whitesmoke;
+}
+nav {
+  background-color: $color2;
+  color: white;
+}
+.container-fluid-h2 {
+  height: $size3;
+  background-color: $color4;
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    color: white;
+    text-shadow: 0 0 10px $color1;
+    margin-bottom: 1px;
+  }
+  }
+.sets {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 10px $color1;
+}
+// Styles header finaliza
+// Styles index inicia
+.galeria {
+  background-color: $color5;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 200px);
+  height: 1200px;
+}
+.item {
+  border: 2px solid $color3;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid1 {
+  background-image: url(images/Guy-J.jpg);
+}
+.grid2 {
+  background-image: url(images/digweed.jpg);
+}
+.grid3 {
+  background-image: url(images/hernan-cattaneo.jpg);
+}
+.grid4 {
+  background-image: url(images/mariano-mellino.jpg);
+}
+.grid5 {
+  background-image: url(images/nick-warren.jpg);
+}
+.grid6 {
+  background-image: url(images/sasha.png);
+}
+
+.guyj {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+.digweed {
+  @extend .guyj;
+}
+.hc {
+  @extend .guyj;
+}
+.mariano {
+  @extend .guyj;
+}
+.warren {
+  @extend .guyj;
+}
+.sasha {
+  @extend .guyj;
+}
+// Styles index finaliza
+// Styles footer inicia
+footer {
+  background-color: $color6;
+  text-align: center;
+  font-size: $size1;
+  color: white;
+  text-shadow: 0 0 5px $color2;
+  width: 100%;
+  font-family: $font2;
+}
+
+.redes {
+  font-size: $size1;
+  letter-spacing: 5px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+// Styles boton inicia
+.subir {
+  height: $size2;
+  width: $size2;
+  background-color: $color5;
+  color: white;
+  position: fixed;
+  bottom: $size2;
+  right: $size2;
+  text-align: center;
+  line-height: $size2;
+  font-size:$size1;
+  box-shadow: 0 0 5px white;
+}
+// Styles footer finaliza
+// Styles sellos inicia
+.sellos {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  text-shadow: 0 0 5px $color2;
+}
+main {
+  background-color: $color1;
+  article {
+    border: 2px solid $color3;
+  }
+}
+.lost {
+  background-image: url(./images/lost-found.jpg);
+  background-position: center;
+  color: white;
+  background-size: cover;
+  text-shadow: 0 0 15px black;
+}
+
+.sound {
+  background-image: url(./images/sound-garden.png);
+  background-position: center;
+  color: white;
+  background-size: cover;
+
+  text-shadow: 0 0 15px black;
+}
+.anjuna {
+  background-image: url(./images/anjuna.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+.bedrock {
+  background-image: url(./images/bedrock.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+.sudbeat {
+  background-image: url(./images/sudbeat.jpg);
+  background-position: center;
+  background-size: cover;
+  color: black;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+}
+.allday {
+  background-image: url(./images/all-day.png);
+  background-position: center;
+  background-size: cover;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+}
+.btn {
+  background-color: $color5;
+  border: 2px solid $color2;
+  color: white;
+  :hover {
+    color: $color4;
+  }
+}
+// Styles sellos finaliza
+// Styles DJS inicia
+.djs {
+  text-align: center;
+  color: white;
+}
+.djs:hover {
+  color: $color6;
+}
+.card {
+  border: 1px solid $color1;
+  background-color: $color3;
+  text-align: center;
+  .card-img-top {
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    border: 1px solid $color4;
+  }
+}
+.card-body {
+  color: white;
+}
+// Styles DJS finaliza
+// Styles proximos eventos inicia
+.body-eventos{
+  background-color: $color6;
+}
+.eventos {
+  text-align: center;
+  color: white;
+}
+.carousel-eventos {
+  width: 100%;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.table{
+  color: white;
+  background-color: $color6;
+}
+// Styles proximos eventos finaliza
+// Styles contacto inicia
+.contacto{
+  text-align: center;
+  color: white;
+  margin-top: 3px;
+  }
+  
+  .form-contacto{
+    color: white;
+    background-color: $color5;
+  
+  }
+  .nleft{
+    background-color:$color5;
+  }
+  .nright{
+    background-image: url(./images/all-day-carrousel.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+// Styles contacto finaliza
