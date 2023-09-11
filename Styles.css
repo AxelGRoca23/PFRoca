@@ -77,6 +77,11 @@ nav {
   color: white;
   text-shadow: 0 0 10px rgb(16, 0, 43);
   margin-bottom: 1px;
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .sets {
@@ -211,7 +216,7 @@ main article {
 }
 
 .sudbeat {
-  background-image: url(./images/sudbeat-1.jpg);
+  background-image: url(./images/sudbeat.jpg);
   background-position: center;
   background-size: cover;
   color: black;
@@ -303,4 +308,40 @@ main article {
   background-image: url(./images/all-day-carrousel.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    height: 600px;
+  }
+  .grid1 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  .grid2 {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    background-image: url(images/digweed2.jpg);
+  }
+  .grid3 {
+    grid-column: 3/4;
+    grid-row: 1/4;
+  }
+  .grid4 {
+    grid-column: 4/5;
+    grid-row: 1/4;
+  }
+  .grid5 {
+    grid-column: 5/6;
+    grid-row: 1/4;
+  }
+  .grid6 {
+    grid-column: 6/7;
+    grid-row: 1/4;
+  }
+  .guyj, .digweed, .hc, .mariano, .warren, .sasha {
+    margin-top: 40vh;
+  }
 }/*# sourceMappingURL=Styles.css.map */
