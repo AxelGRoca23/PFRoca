@@ -66,9 +66,28 @@ nav {
   color: white;
 }
 
-.container-fluid-h2 {
-  height: 60px;
+.container-fluid-h1 {
   background-color: rgb(90, 24, 154);
+  color: white;
+  padding: 1px;
+}
+.container-fluid-h1 h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-shadow: 0 0 20px black;
+}
+
+.bienvenidos {
+  margin-left: 10px;
+  font-size: 14px;
+  font-style: oblique;
+}
+
+.container-fluid-h2 {
+  background-color: rgb(123, 44, 191);
+  padding: 1px;
 }
 .container-fluid-h2 h2 {
   display: flex;
@@ -106,27 +125,27 @@ nav {
 }
 
 .grid1 {
-  background-image: url(images/Guy-J.jpg);
+  background-image: url(images/Guy-J.webp);
 }
 
 .grid2 {
-  background-image: url(images/digweed.jpg);
+  background-image: url(images/digweed.webp);
 }
 
 .grid3 {
-  background-image: url(images/hernan-cattaneo.jpg);
+  background-image: url(images/hernan-cattaneo.webp);
 }
 
 .grid4 {
-  background-image: url(images/mariano-mellino.jpg);
+  background-image: url(images/mariano-mellino.webp);
 }
 
 .grid5 {
-  background-image: url(images/nick-warren.jpg);
+  background-image: url(images/nick-warren.webp);
 }
 
 .grid6 {
-  background-image: url(images/sasha.png);
+  background-image: url(images/sasha.webp);
 }
 
 .guyj, .sasha, .warren, .mariano, .hc, .digweed {
@@ -184,7 +203,7 @@ main article {
 }
 
 .lost {
-  background-image: url(./images/lost-found.jpg);
+  background-image: url(./images/lost-found.webp);
   background-position: center;
   color: white;
   background-size: cover;
@@ -192,7 +211,7 @@ main article {
 }
 
 .sound {
-  background-image: url(./images/sound-garden.png);
+  background-image: url(./images/sound-garden.webp);
   background-position: center;
   color: white;
   background-size: cover;
@@ -200,7 +219,7 @@ main article {
 }
 
 .anjuna {
-  background-image: url(./images/anjuna.jpg);
+  background-image: url(./images/anjuna.webp);
   background-position: center;
   background-size: cover;
   color: white;
@@ -208,7 +227,7 @@ main article {
 }
 
 .bedrock {
-  background-image: url(./images/bedrock.jpg);
+  background-image: url(./images/bedrock.webp);
   background-position: center;
   background-size: cover;
   color: white;
@@ -216,7 +235,7 @@ main article {
 }
 
 .sudbeat {
-  background-image: url(./images/sudbeat.jpg);
+  background-image: url(./images/sudbeat-1.webp);
   background-position: center;
   background-size: cover;
   color: black;
@@ -225,7 +244,7 @@ main article {
 }
 
 .allday {
-  background-image: url(./images/all-day.png);
+  background-image: url(./images/all-day.webp);
   background-position: center;
   background-size: cover;
   font-weight: bold;
@@ -258,7 +277,7 @@ main article {
 .card .card-img-top {
   background-size: cover;
   background-position: center;
-  height: 150px;
+  height: 220px;
   border: 1px solid rgb(90, 24, 154);
 }
 
@@ -305,43 +324,28 @@ main article {
 }
 
 .nright {
-  background-image: url(./images/all-day-carrousel.jpg);
+  background-image: url(./images/all-day-carrousel.webp);
   background-size: cover;
   background-position: center;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   .galeria {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 200px);
-    height: 600px;
+    grid-template-columns: repeat(3, 160px);
+    grid-template-rows: repeat(4, 100px);
+    height: 400px;
   }
   .grid1 {
     grid-column: 1/2;
-    grid-row: 1/4;
+    grid-row: 1/5;
   }
   .grid2 {
     grid-column: 2/3;
-    grid-row: 1/4;
-    background-image: url(images/digweed2.jpg);
+    grid-row: 1/5;
+    background-image: url(images/digweed2.webp);
   }
   .grid3 {
     grid-column: 3/4;
-    grid-row: 1/4;
-  }
-  .grid4 {
-    grid-column: 4/5;
-    grid-row: 1/4;
-  }
-  .grid5 {
-    grid-column: 5/6;
-    grid-row: 1/4;
-  }
-  .grid6 {
-    grid-column: 6/7;
-    grid-row: 1/4;
-  }
-  .guyj, .digweed, .hc, .mariano, .warren, .sasha {
-    margin-top: 40vh;
+    grid-row: 1/5;
   }
 }/*# sourceMappingURL=Styles.css.map */

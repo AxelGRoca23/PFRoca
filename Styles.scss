@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Rubik:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&family=Rubik:wght@300&display=swap");
 // font-family: 'Rajdhani', sans-serif;
 // font-family: 'Rubik', sans-serif;
 $colors: "colores";
-$color1: rgb(16,0,43);
-$color2: rgb(36,0,70);
-$color3: rgb(60,9,108);
-$color4: rgb(90,24,154);
-$color5: rgb(123,44,191);
-$color6: rgb(157,78,221);
-$color7: rgb(199,125,255);
-$color8: rgb(224,170,255);
+$color1: rgb(16, 0, 43);
+$color2: rgb(36, 0, 70);
+$color3: rgb(60, 9, 108);
+$color4: rgb(90, 24, 154);
+$color5: rgb(123, 44, 191);
+$color6: rgb(157, 78, 221);
+$color7: rgb(199, 125, 255);
+$color8: rgb(224, 170, 255);
 
 $sizes: "tamaños";
 $size1: 20px;
@@ -20,8 +20,8 @@ $size4: 80px;
 $size5: 100px;
 
 $fonts: "fuentes";
-$font1: 'Rajdhani', sans-serif;
-$font2: 'Rubik', sans-serif;
+$font1: "Rajdhani", sans-serif;
+$font2: "Rubik", sans-serif;
 * {
   margin: 0;
   padding: 0;
@@ -76,9 +76,30 @@ nav {
   background-color: $color2;
   color: white;
 }
-.container-fluid-h2 {
-  height: $size3;
+.container-fluid-h1{
   background-color: $color4;
+  color: white;
+  padding: 1px;
+  h1{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 20px black;
+  }
+  
+}
+.bienvenidos{
+  margin-left: 10px;
+  font-size: 14px;
+  font-style: oblique;
+
+}
+
+
+.container-fluid-h2 {
+  background-color: $color5;
+  padding: 1px;
   h2 {
     display: flex;
     justify-content: center;
@@ -92,13 +113,14 @@ nav {
     animation-direction: alternate;
     animation-iteration-count: infinite;
   }
-  }
+}
 .sets {
   display: flex;
   justify-content: center;
   color: white;
   text-shadow: 0 0 10px $color1;
 }
+
 // Styles header finaliza
 // Styles index inicia
 .galeria {
@@ -115,28 +137,31 @@ nav {
 }
 
 .grid1 {
-  background-image: url(images/Guy-J.jpg);
+  background-image: url(images/Guy-J.webp);
 }
 .grid2 {
-  background-image: url(images/digweed.jpg);
+  background-image: url(images/digweed.webp);
 }
 .grid3 {
-  background-image: url(images/hernan-cattaneo.jpg);
+  background-image: url(images/hernan-cattaneo.webp);
 }
 .grid4 {
-  background-image: url(images/mariano-mellino.jpg);
+  background-image: url(images/mariano-mellino.webp);
 }
 .grid5 {
-  background-image: url(images/nick-warren.jpg);
+  background-image: url(images/nick-warren.webp);
 }
 .grid6 {
-  background-image: url(images/sasha.png);
+  background-image: url(images/sasha.webp);
 }
 
 .guyj {
   display: flex;
   justify-content: center;
   margin-top: 22px;
+  // border: 2px solid $color3;
+  
+  
 }
 .digweed {
   @extend .guyj;
@@ -184,7 +209,7 @@ footer {
   right: $size2;
   text-align: center;
   line-height: $size2;
-  font-size:$size1;
+  font-size: $size1;
   box-shadow: 0 0 5px white;
 }
 // Styles footer finaliza
@@ -203,7 +228,7 @@ main {
   }
 }
 .lost {
-  background-image: url(./images/lost-found.jpg);
+  background-image: url(./images/lost-found.webp);
   background-position: center;
   color: white;
   background-size: cover;
@@ -211,7 +236,7 @@ main {
 }
 
 .sound {
-  background-image: url(./images/sound-garden.png);
+  background-image: url(./images/sound-garden.webp);
   background-position: center;
   color: white;
   background-size: cover;
@@ -219,21 +244,21 @@ main {
   text-shadow: 0 0 15px black;
 }
 .anjuna {
-  background-image: url(./images/anjuna.jpg);
+  background-image: url(./images/anjuna.webp);
   background-position: center;
   background-size: cover;
   color: white;
   text-shadow: 0 0 5px white;
 }
 .bedrock {
-  background-image: url(./images/bedrock.jpg);
+  background-image: url(./images/bedrock.webp);
   background-position: center;
   background-size: cover;
   color: white;
   text-shadow: 0 0 5px white;
 }
 .sudbeat {
-  background-image: url(./images/sudbeat.jpg);
+  background-image: url(./images/sudbeat-1.webp);
   background-position: center;
   background-size: cover;
   color: black;
@@ -241,7 +266,7 @@ main {
   text-shadow: 0 0 5px white;
 }
 .allday {
-  background-image: url(./images/all-day.png);
+  background-image: url(./images/all-day.webp);
   background-position: center;
   background-size: cover;
   font-weight: bold;
@@ -251,6 +276,7 @@ main {
   background-color: $color5;
   border: 2px solid $color2;
   color: white;
+  
   :hover {
     color: $color4;
   }
@@ -271,7 +297,7 @@ main {
   .card-img-top {
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 220px;
     border: 1px solid $color4;
   }
 }
@@ -280,7 +306,7 @@ main {
 }
 // Styles DJS finaliza
 // Styles proximos eventos inicia
-.body-eventos{
+.body-eventos {
   background-color: $color6;
 }
 .eventos {
@@ -294,81 +320,84 @@ main {
   width: 100%;
   height: 100%;
 }
-.table{
+.table {
   color: white;
   background-color: $color6;
 }
 // Styles proximos eventos finaliza
 // Styles contacto inicia
-.contacto{
+.contacto {
   text-align: center;
   color: white;
   margin-top: 3px;
-  }
-  
-  .form-contacto{
-    color: white;
-    background-color: $color5;
-  
-  }
-  .nleft{
-    background-color:$color5;
-  }
-  .nright{
-    background-image: url(./images/all-day-carrousel.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  
+}
+
+.form-contacto {
+  color: white;
+  background-color: $color5;
+}
+.nleft {
+  background-color: $color5;
+}
+.nright {
+  background-image: url(./images/all-day-carrousel.webp);
+  background-size: cover;
+  background-position: center;
+}
+
 // Styles contacto finaliza
 // Comienzan las @media
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   .galeria {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 200px);
-    height: 600px;
+    grid-template-columns: repeat(3, 160px);
+    grid-template-rows: repeat(4, 100px);
+    height: 400px;
+    
   }
   .grid1 {
     grid-column: 1/2;
-    grid-row: 1/4;
+    grid-row: 1/5;
   }
   .grid2 {
     grid-column: 2/3;
-    grid-row: 1/4;
-    background-image: url(images/digweed2.jpg);
+    grid-row: 1/5;
+    background-image: url(images/digweed2.webp);
   }
   .grid3 {
     grid-column: 3/4;
-    grid-row: 1/4;
+    grid-row: 1/5;
   }
-  .grid4 {
-    grid-column: 4/5;
-    grid-row: 1/4;
-  }
-  .grid5 {
-    grid-column: 5/6;
-    grid-row: 1/4;
-  }
-  .grid6 {
-    grid-column: 6/7;
-    grid-row: 1/4;
-  }
-  .guyj {
-    margin-top: 40vh;
-  }
-  .digweed {
-    @extend .guyj;
-  }
-  .hc {
-    @extend .guyj;
-  }
-  .mariano {
-    @extend .guyj;
-  }
-  .warren {
-    @extend .guyj;
-  }
-  .sasha {
-    @extend .guyj;
-  }
+  // .grid4 {
+  //   grid-column: 4/5;
+  //   grid-row: 1/5;
+  // }
+  // .grid5 {
+  //   grid-column: 5/6;
+  //   grid-row: 1/5;
+  // }
+  // .grid6 {
+  //   grid-column: 6/7;
+  //   grid-row: 1/5;
+  // }
+  // .guyj {
+  //   display: flex;
+  //   justify-content:center;
+  //   width: 50px;
+  //   height: 50px;
+  // }
+  // .digweed {
+  //   @extend .guyj;
+  // }
+  // .hc {
+  //   @extend .guyj;
+  // }
+  // .mariano {
+  //   @extend .guyj;
+  // }
+  // .warren {
+  //   @extend .guyj;
+  // }
+  // .sasha {
+  //   @extend .guyj;
+  // }
 }
