@@ -39,67 +39,80 @@ header {
   display: flex;
   justify-content: center;
   padding: 10px;
-  font-size: 30px;
+  font-size: 25px;
 }
-img {
-  height: 30px;
-}
+
 .item1 {
   padding: 3px;
-  color: $color3;
+  color: $color5;
 }
 .item1:hover {
   color: whitesmoke;
 }
 .item2 {
   padding: 3px;
-  color: $color4;
+  color: $color6;
 }
 .item2:hover {
   color: aliceblue;
 }
 .item3 {
   padding: 3px;
-  color: $color5;
+  color: $color7;
 }
 .item3:hover {
   color: aliceblue;
 }
 .item4 {
   padding: 3px;
-  color: $color7;
+  color: $color8;
 }
 .item4:hover {
   color: whitesmoke;
+}
+img {
+  height: 30px;
 }
 nav {
   background-color: $color2;
   color: white;
 }
-.container-fluid-h1{
+// Styles header finaliza
+// Styles index inicia
+.container-fluid-h1 {
   background-color: $color4;
   color: white;
   padding: 1px;
-  h1{
+  h1 {
     display: flex;
     justify-content: center;
     font-size: 30px;
     letter-spacing: 5px;
     text-shadow: 0 0 20px black;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
   }
-  
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
-.bienvenidos{
+
+.bienvenidos {
   margin-left: 10px;
   font-size: 14px;
   font-style: oblique;
-
 }
-
-
 .container-fluid-h2 {
+  height: $size4;
   background-color: $color5;
-  padding: 1px;
   h2 {
     display: flex;
     justify-content: center;
@@ -107,76 +120,62 @@ nav {
     color: white;
     text-shadow: 0 0 10px $color1;
     margin-bottom: 1px;
-    animation-name: aparecer;
-    animation-duration: 3s;
-    animation-delay: 4s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
   }
 }
-.sets {
+.mejores {
   display: flex;
   justify-content: center;
   color: white;
   text-shadow: 0 0 10px $color1;
 }
 
-// Styles header finaliza
-// Styles index inicia
-.galeria {
-  background-color: $color5;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, 200px);
-  height: 1200px;
-}
-.item {
+.sets {
+  color: white;
+  background-image: linear-gradient(to top left, $color1, $color3, $color5);
+  text-shadow: 0 0 7px $color2;
   border: 2px solid $color3;
-  background-size: cover;
-  background-position: center;
+  h3 {
+    font-size: $size1;
+    text-align: center;
+    margin-left: 10px;
+    p {
+      font-size: 13px;
+      padding-left: 10px;
+    }
+  }
 }
-
-.grid1 {
-  background-image: url(images/Guy-J.webp);
+.youtube1 {
+  width: 250px;
+  border: 1px solid $color3;
 }
-.grid2 {
-  background-image: url(images/digweed.webp);
-}
-.grid3 {
-  background-image: url(images/hernan-cattaneo.webp);
-}
-.grid4 {
-  background-image: url(images/mariano-mellino.webp);
-}
-.grid5 {
-  background-image: url(images/nick-warren.webp);
-}
-.grid6 {
-  background-image: url(images/sasha.webp);
-}
-
 .guyj {
   display: flex;
   justify-content: center;
-  margin-top: 22px;
-  // border: 2px solid $color3;
-  
-  
+  background-image: url(images/Guy-J.webp);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  border: 2px solid $color3;
 }
 .digweed {
   @extend .guyj;
+  background-image: url(images/digweed.webp);
 }
 .hc {
   @extend .guyj;
+  background-image: url(images/hernan-cattaneo.webp);
 }
 .mariano {
   @extend .guyj;
+  background-image: url(images/mariano-mellino.webp);
 }
 .warren {
   @extend .guyj;
+  background-image: url(images/sound-garden2.webp);
 }
 .sasha {
   @extend .guyj;
+  background-image: url(images/sasha.webp);
 }
 // Styles index finaliza
 // Styles footer inicia
@@ -188,6 +187,7 @@ footer {
   text-shadow: 0 0 5px $color2;
   width: 100%;
   font-family: $font2;
+  padding: 10px;
 }
 
 .redes {
@@ -221,6 +221,9 @@ footer {
   color: white;
   text-shadow: 0 0 5px $color2;
 }
+.media-sellos{
+  padding: 6px;
+}
 main {
   background-color: $color1;
   article {
@@ -251,7 +254,7 @@ main {
   text-shadow: 0 0 5px white;
 }
 .bedrock {
-  background-image: url(./images/bedrock.webp);
+  background-image: url(./images/bedrock2.webp);
   background-position: center;
   background-size: cover;
   color: white;
@@ -276,7 +279,7 @@ main {
   background-color: $color5;
   border: 2px solid $color2;
   color: white;
-  
+
   :hover {
     color: $color4;
   }
@@ -287,9 +290,7 @@ main {
   text-align: center;
   color: white;
 }
-.djs:hover {
-  color: $color6;
-}
+
 .card {
   border: 1px solid $color1;
   background-color: $color3;
@@ -306,9 +307,6 @@ main {
 }
 // Styles DJS finaliza
 // Styles proximos eventos inicia
-.body-eventos {
-  background-color: $color6;
-}
 .eventos {
   text-align: center;
   color: white;
@@ -323,6 +321,7 @@ main {
 .table {
   color: white;
   background-color: $color6;
+  font-size: 14px;
 }
 // Styles proximos eventos finaliza
 // Styles contacto inicia
@@ -334,7 +333,8 @@ main {
 
 .form-contacto {
   color: white;
-  background-color: $color5;
+  background-color: $color7;
+  padding: 7px;
 }
 .nleft {
   background-color: $color5;
@@ -347,57 +347,37 @@ main {
 
 // Styles contacto finaliza
 // Comienzan las @media
-@media only screen and (min-width: 576px) and (max-width: 1024px) {
-  .galeria {
-    grid-template-columns: repeat(3, 160px);
-    grid-template-rows: repeat(4, 100px);
-    height: 400px;
-    
+@media only screen and (max-width: 576px){
+  .container-fluid-h1{
+    background-color: $color6;
   }
-  .grid1 {
-    grid-column: 1/2;
-    grid-row: 1/5;
+  .table{
+    font-size:10px;
   }
-  .grid2 {
-    grid-column: 2/3;
-    grid-row: 1/5;
-    background-image: url(images/digweed2.webp);
+
+}
+@media only screen and (min-width: 576px) {
+  .container-fluid-h2 {
+    height: $size3;
   }
-  .grid3 {
-    grid-column: 3/4;
-    grid-row: 1/5;
+}
+@media only screen and (min-width: 576px) and (max-width: 990px) {
+  .youtube1 {
+    height: 120px;
+    width: 130px;
+    margin-top: 35px;
   }
-  // .grid4 {
-  //   grid-column: 4/5;
-  //   grid-row: 1/5;
-  // }
-  // .grid5 {
-  //   grid-column: 5/6;
-  //   grid-row: 1/5;
-  // }
-  // .grid6 {
-  //   grid-column: 6/7;
-  //   grid-row: 1/5;
-  // }
-  // .guyj {
-  //   display: flex;
-  //   justify-content:center;
-  //   width: 50px;
-  //   height: 50px;
-  // }
-  // .digweed {
-  //   @extend .guyj;
-  // }
-  // .hc {
-  //   @extend .guyj;
-  // }
-  // .mariano {
-  //   @extend .guyj;
-  // }
-  // .warren {
-  //   @extend .guyj;
-  // }
-  // .sasha {
-  //   @extend .guyj;
-  // }
+}
+@media only screen and (min-width: 1000px) {
+  .media-sellos {
+    height: 300px;
+    h4 {
+      font-size: $size2;
+      display: flex;
+      justify-content: center;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
 }
