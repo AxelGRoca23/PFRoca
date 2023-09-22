@@ -221,7 +221,7 @@ footer {
   color: white;
   text-shadow: 0 0 5px $color2;
 }
-.media-sellos{
+.media-sellos {
   padding: 6px;
 }
 main {
@@ -347,14 +347,13 @@ main {
 
 // Styles contacto finaliza
 // Comienzan las @media
-@media only screen and (max-width: 576px){
-  .container-fluid-h1{
+@media only screen and (max-width: 576px) {
+  .container-fluid-h1 {
     background-color: $color6;
   }
-  .table{
-    font-size:10px;
+  .table {
+    font-size: 10px;
   }
-
 }
 @media only screen and (min-width: 576px) {
   .container-fluid-h2 {

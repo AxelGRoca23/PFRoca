@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta name="description" content="contactanos para sumarte a la comunidad WNMP">
-    <meta name="keywords" content="contacto musica djs progressive house informacion ">
+    <meta
+      name="description"
+      content="contactanos para sumarte a la comunidad WNMP"
+    />
+    <meta
+      name="keywords"
+      content="contacto musica djs progressive house informacion "
+    />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,6 +66,9 @@
           <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
                 <a class="nav-link" href="../pages/sellos.html">Sellos</a>
               </li>
               <li class="nav-item">
@@ -71,9 +80,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/contacto.html"
-                  >Contacto</a
-                >
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -82,50 +89,86 @@
     </header>
     <!--Finaliza el header-->
     <!--main inicia-->
-    <div class="container-fluid-h1">
-      <h1>WNMP</h1>
-    </div>
-    <div class="container-fluid-h2">
-      <h2>Contacto</h2>
-      <p class="contacto">
-        Contactanos para unirte a la comunidad WNMP!!
-      </p>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-      <div class="nleft col-sm-8  col-xl-6">
-
-        <form action="/action_page.php" class="form-contacto">
-          <div class="mb-3 mt-3">
-            <label for="nombre" class="form-label">Nombre y Apellido:</label>
-            <input type="nombre" class="form-control" id="nombre" placeholder="Nombre y Apellido" name="nombre">
+    <main>
+      <div class="container-fluid-h1">
+        <h1>WNMP</h1>
+      </div>
+      <div class="container-fluid-h2">
+        <h2>Contacto</h2>
+        <p class="contacto">Contactanos para unirte a la comunidad WNMP!!</p>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="nleft col-sm-8 col-xl-6">
+            <form action="/action_page.php" class="form-contacto">
+              <div class="mb-3 mt-3">
+                <label for="nombre" class="form-label"
+                  >Nombre y Apellido:</label
+                >
+                <input
+                  type="nombre"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Nombre y Apellido"
+                  name="nombre"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="edad" class="form-label">Edad:</label>
+                <input
+                  type="edad"
+                  class="form-control"
+                  id="edad"
+                  placeholder="Ingresa tu Edad"
+                  name="edad"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Sexo" class="form-label">Sexo:</label>
+                <input
+                  type="Sexo"
+                  class="form-control"
+                  id="Sexo"
+                  placeholder="Sexo"
+                  name="Sexo"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="Email"
+                  placeholder="Ingresa tu Email"
+                  name="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Numero de Contacto" class="form-label"
+                  >Numero de Contacto:</label
+                >
+                <input
+                  type="contacto"
+                  class="form-control"
+                  id="contacto"
+                  placeholder="Numero de contacto"
+                  name="contacto"
+                />
+              </div>
+              <label for="comment">Motivo del contacto:</label>
+              <textarea
+                class="form-control"
+                rows="5"
+                id="comment"
+                name="text"
+              ></textarea>
+              <button type="submit" class="btn">Enviar</button>
+            </form>
+          </div>
+          <div class="nright col-sm-4 col-xl-6"></div>
         </div>
-        <div class="mb-3">
-          <label for="edad" class="form-label">Edad:</label>
-          <input type="edad" class="form-control" id="edad" placeholder="Ingresa tu Edad" name="edad">
-        </div>
-        <div class="mb-3">
-          <label for="Sexo" class="form-label">Sexo:</label>
-        <input type="Sexo" class="form-control" id="Sexo" placeholder="Sexo" name="Sexo">
       </div>
-      <div class="mb-3">
-        <label for="Email" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="Email" placeholder="Ingresa tu Email" name="Email">
-      </div>
-      <div class="mb-3">
-        <label for="Numero de Contacto" class="form-label">Numero de Contacto:</label>
-        <input type="contacto" class="form-control" id="contacto" placeholder="Numero de contacto" name="contacto">
-      </div>
-      <label for="comment">Motivo del contacto:</label>
-      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-      <button type="submit" class="btn ">Enviar</button>  
-    </form>
-  </div>
-  <div class="nright col-sm-4   col-xl-6" >
-  </div>
-</div>
-</div>
-</main>
+    </main>
     <!--main finaliza-->
     <!--footer inicia-->
     <footer>
